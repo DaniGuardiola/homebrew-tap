@@ -8,6 +8,7 @@ import subprocess
 ROOT = Path(__file__).resolve().parent.parent
 # cask -> (release repository, DMG name for a version)
 CASKS = {
+    'extend-computer': ('DaniGuardiola/extend.computer', 'extend.computer-{version}-universal.dmg'),
     'igor-computer': ('DaniGuardiola/igor.computer', 'igor.computer-{version}-arm64.dmg'),
 }
 
