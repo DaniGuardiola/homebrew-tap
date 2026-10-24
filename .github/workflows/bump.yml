@@ -1,0 +1,27 @@
+name: Bump casks
+# Projects publish GitHub releases; this picks up new stable ones without any cross-repo token.
+on:
+  schedule:
+    - cron: "17 * * * *"
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: bump
+jobs:
+  bump:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - run: python3 scripts/bump.py | tee bumped.txt
+      - name: Commit
+        run: |
+          [[ -s bumped.txt ]] || exit 0
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add Casks
+          git commit -q -m "$(printf 'Bump casks\n\n'; cat bumped.txt)"
+          git push -q
