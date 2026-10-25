@@ -1,6 +1,6 @@
 cask "igor-computer" do
-  version "0.3.0"
-  sha256 "3a1793695812de172db88e2a319555593feae0c80cb53b7b17f268765ea7a31a"
+  version "0.4.0"
+  sha256 "293e7fe31f5c738e0316597e4286b7593a510a6d46acec272ab455c3aee10c62"
 
   url "https://github.com/DaniGuardiola/igor.computer/releases/download/v#{version}/igor.computer-#{version}-arm64.dmg"
   name "igor.computer"
