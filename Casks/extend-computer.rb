@@ -1,6 +1,6 @@
 cask "extend-computer" do
-  version "0.3.1"
-  sha256 "f2cca5d6a28f9d3df8f591ecf8b70476d64415eb2891836ac7e2e0c7a5d8cd0a"
+  version "0.4.0"
+  sha256 "4a116ec90591eb215f9850936c341c72ad05bd8e71a0fd87efe43fd54f97d89a"
 
   url "https://github.com/DaniGuardiola/extend.computer/releases/download/v#{version}/extend.computer-#{version}-universal.dmg"
   name "extend.computer"
