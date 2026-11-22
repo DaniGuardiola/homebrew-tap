@@ -1,8 +1,8 @@
 class Zen < Formula
   desc "Companion for zen.dio.la: a quiet conversation with a Madhyamaka monk"
   homepage "https://zen.dio.la"
-  url "https://github.com/DaniGuardiola/zen.dio.la/releases/download/v0.3.3/zen-0.3.3-darwin-arm64.tar.gz"
-  sha256 "9de4b55b4cabcb14a080f290960c777493fc4cefcb115dde99e635e6098d5c4b"
+  url "https://github.com/DaniGuardiola/zen.dio.la/releases/download/v0.4.0/zen-0.4.0-darwin-arm64.tar.gz"
+  sha256 "0df7d5ff1d14c9055576a695841e48848ade747b17559b0f13f966d47705b2ef"
   license "MIT"
 
   depends_on arch: :arm64
