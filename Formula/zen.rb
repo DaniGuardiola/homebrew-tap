@@ -30,7 +30,7 @@ class Zen < Formula
   def caveats
     <<~EOS
       Start the companion, then open https://zen.dio.la
-        brew services start zen
+        brew services start daniguardiola/tap/zen
 
       The monk speaks through Claude Code: install it and sign in first.
       Voice models (~1 GB) download the first time you turn voice on.
